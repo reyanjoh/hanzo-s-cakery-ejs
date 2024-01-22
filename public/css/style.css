@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+
+:root{
+    --margin: 10rem;
+    --content-max-width: 70rem; 
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.blueHover{
+    transition: .2s;
+}
+
+.blueHover:hover{
+    color: #35C2D6;
+}
+
+.main-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: brown; */
+    margin: 0 var(--margin);
+    /* max-width: var(--content-max-width); */
+}
+
+/* .main-nav{
+    background-color: blue;
+} */
+
+
+.main-nav > ul  {
+    list-style: none;
+      
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+
+    /* background-color: red; */
+
+}
+
+.main-nav > ul > li > a{
+    text-decoration: none;
+    font-family: "Imprima", sans-serif;
+    color: black;    
+}
+
+.main-nav > ul > li > .nav-active{
+    color: #35C2D6;
+}
+
+
+
+.footer-main{
+    display: flex;
+    margin: 0 var(--margin);
+    /* background-color: brown; */
+}
+
+.footer-main *{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    font-family: "Imprima", sans-serif;
+}
+
+.footer-main > .footer-logo-container > ul{
+    padding: 0;
+    margin: 0;
+}
+
+.footer-main > .footer-logo-container > ul > li{
+    padding: .35rem 0;
+    /* letter-spacing: 1px; */
+}
+
+.footer-main > .footer-logo-container > ul *{
+    font-size: .9rem;
+}
+
+.footer-main > .footer-sitemap {
+    width: 100%;
+    margin: 1rem 0 0 5rem;
+}
+
+.footer-main > .footer-sitemap * {
+    padding: .2rem 0;
+}
+
+.footer-main > .footer-sitemap span {
+    font-weight: 600;
+}
+
+
+
+.footer-main > .footer-sitemap > ul{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+    list-style: none;
+}
+
+.footer-main > .footer-sitemap > ul > li > ul {
+    list-style: none;
+}
+
+
