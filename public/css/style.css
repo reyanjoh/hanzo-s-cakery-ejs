@@ -1,16 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 :root{
     --margin: 10rem;
     --content-max-width: 70rem; 
     --btn-colors: #35C2D6;
     --section-2: #FAFAFF;
+    --header-font: 'Indie Flower', cursive;
 }
 
 html, body{
     margin: 0;
     padding: 0;
+    /* overflow-x: hidden; */
+    font-family: "Imprima", sans-serif;
 }
 
 .blueHover{
@@ -35,10 +40,59 @@ html, body{
 } */
 
 .headers{
-    font-family: "Imprima", sans-serif;
     font-size: 3rem;
-    
+    color: var(--btn-colors);
+    font-family: var(--header-font);
+    font-weight: 700;
 }
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 50dvw 50dvw;
+}
+
+.grid-2-left{
+    /* background-color: red; */
+    padding-left: var(--margin);
+}
+
+.hero-header{
+    margin: 3rem 0 0;
+    font-size: 3.5rem;
+    line-height: 3rem
+
+}
+
+.grid-2-right{
+    /* background-color: red; */
+    padding-right: var(--margin);
+}
+
+.justify-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.twin-btn{
+    font-size: .9rem;
+    text-decoration: none;
+    padding: .3rem;
+    width: 7rem;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.blue-btn{
+    background-color: var(--btn-colors);
+    color: white;
+}
+.white-btn{
+    /* background-color: var(--btn-colors); */
+    color: var(--btn-colors);
+    border: 1px solid var(--btn-colors);
+}
+
 
 
 .main-nav > ul  {
@@ -54,13 +108,37 @@ html, body{
 
 .main-nav > ul > li > a{
     text-decoration: none;
-    font-family: "Imprima", sans-serif;
     color: black;    
 }
 
 .main-nav > ul > li > .nav-active{
     color: #35C2D6;
 }
+
+
+.hero{
+    /* background-color: brown; */
+    /* width: 100dvw; */
+    min-height: 25rem;
+    padding: 0 0 4rem;
+}
+
+.hero-subheader{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.hero-cta{
+    display: flex;
+    gap: .8rem;
+}
+
+.hero-img{
+    width: 28rem;
+}
+
+
+
 
 
 .emailCapture-container{
@@ -82,7 +160,7 @@ html, body{
     height: 15rem;
     border-radius: .8rem;
     position: relative;
-    font-family: "Imprima", sans-serif;
+   
 
 }
 
@@ -152,7 +230,6 @@ html, body{
     list-style: none;
     color: black;
     text-decoration: none;
-    font-family: "Imprima", sans-serif;
 }
 
 .footer-main > .footer-logo-container > ul{
